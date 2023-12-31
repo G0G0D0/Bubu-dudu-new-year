@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #ff66a3; /* Rose pink background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-heading {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+    text-shadow: 0 0 15px #ff66a3; /* Shadow with a color similar to the background */
+}
+
+#fireworksCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#greeting-text {
+    position: absolute;
+    z-index: 2;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #fff;
+}
+
+
+
+
+
+
+
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
